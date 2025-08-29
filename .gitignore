@@ -1,24 +1,30 @@
-# Node
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Node modules
+/backend/node_modules
+/frontend/node_modules
+
+# Build outputs
+/frontend/dist
+/backend/dist
 
 # Logs
 logs
 *.log
-*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# dotenv environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Environment variables
+*.env
 
-# Vite build output
-frontend/dist/
-
-# Mac / system
+# OS-specific
 .DS_Store
 Thumbs.db
+
+# IDE-specific
+.vscode/
+.idea/
+*.swp
+
+# Misc
+package-lock.json
+yarn.lock
