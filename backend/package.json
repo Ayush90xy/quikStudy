@@ -5,10 +5,11 @@
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
-    "lint": "echo \"Add your linter here\""
-  },
+  "build:frontend": "cd ../frontend && npm install && npm run build",
+  "build": "npm run build:frontend && npm install",
+  "start": "node server.js"
+}
+,
   "dependencies": {
     "@google/genai": "^1.16.0",
     "@google/generative-ai": "^0.24.1",
